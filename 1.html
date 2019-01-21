@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom</title>
+</head>
+<body onload="draw();">
+<canvas id="draw" width="300" height="300"></canvas>
+	
+</div>
+<script>
+ function draw()
+  {
+ 	var can = document.getElementById("draw");
+ 	if(can.getContext)
+ 	{
+ 		var con = can.getContext("2d");
+ 		con.fillRect(20,20,100,100);
+ 		con.clearRect(40,40,60,60);
+ 		con.strokeRect(45,45,50,50);
+ 	}
+ }
+</script>
+</body>
+</html>

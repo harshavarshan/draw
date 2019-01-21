@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom</title>
+</head>
+<body onload="draw();">
+<canvas id="draw" width="300" height="300"></canvas>
+	
+</div>
+<script>
+ function draw()
+  {
+ 	var can = document.getElementById("draw");
+ 	if(can.getContext)
+ 	{
+ 		var con = can.getContext("2d");
+ 		con.beginPath();
+ 		con.arc(75,75,50,0,Math.PI*2,true);
+ 		con.moveTo(110,75);
+ 		con.arc(75,75,35,0,Math.PI*2,false);
+ 		con.moveTo(55,65);
+ 		con.arc(60,65,5,0,Math.PI*2,true);
+ 		con.arc(90,65,5,0,Math.PI*2,true);
+ 		con.stroke();
+ 	}
+ }
+</script>
+</body>
+</html>
